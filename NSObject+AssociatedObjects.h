@@ -8,7 +8,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSObject (AMAssociatedObjects)
-- (void)associateValue:(id)value withKey:(void *)key; // Strong reference
-- (void)weaklyAssociateValue:(id)value withKey:(void *)key;
+- (void)associateValue:(id)value withKey:(void *)key; // Retains value.
 - (id)associatedValueForKey:(void *)key;
 @end
