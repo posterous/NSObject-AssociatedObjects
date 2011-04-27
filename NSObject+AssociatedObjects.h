@@ -5,8 +5,6 @@
 //  Public domain because I love you.
 //
 
-#import <Cocoa/Cocoa.h>
-
 @interface NSObject (AMAssociatedObjects)
 - (void)associateValue:(id)value withKey:(void *)key; // Strong reference
 - (void)weaklyAssociateValue:(id)value withKey:(void *)key;
